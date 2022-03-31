@@ -2,8 +2,8 @@
 <html>
 <body>
 
-<h1>La verdad Sosa se la come</h1>
-<p>Pinche inutil chillon</p>
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
 
 </body>
 </html>
