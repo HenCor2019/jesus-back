@@ -5,23 +5,24 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Student {
+  public final String dept;
   public final String firstName;
   public final String lastName;
   public final String idNumber;
   public final String birthdate;
   public Integer age;
 
-  public Student( String firstName, String lastName, String idNumber, String birthdate){
-     
-      this.firstName = firstName;
-      this.lastName = lastName;
-      this.idNumber = idNumber;
-      this.birthdate = birthdate;
-      this.age = this.calculateAge(birthdate);
-  }
-  
 
-  private Integer calculateAge(String lastAge) {
+  public Student(String dept, String firstName, String lastName, String idNumber, String birthdate) {
+	this.dept = dept;
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.idNumber = idNumber;
+	this.birthdate = birthdate;
+}
+
+
+private Integer calculateAge(String lastAge) {
     try {
       SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
       Date currentDate = new Date();

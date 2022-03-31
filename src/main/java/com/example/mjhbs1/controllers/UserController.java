@@ -12,16 +12,16 @@ public class UserController  {
 	@PostMapping("/saveData")
 
 	public String saveData(
-			@RequestParam("dep") String dep,
-			@RequestParam("name") String name,
+			@RequestParam("dept") String dept,
+			@RequestParam("firstName") String firstName,
 			@RequestParam("lastName") String lastName,
 			@RequestParam("idNumber") String idNumber,
 			@RequestParam("birthdate") String birthdate, ModelMap modelMap) {
 		if (Util.isDateValid(birthdate)) {
 			System.out.println("valid Birthdate");
 		}
-		modelMap.put("dep", dep);
-		modelMap.put("name", name);
+		modelMap.put("dept", dept);
+		modelMap.put("firstName", firstName);
 		modelMap.put("lastName", lastName);
 		modelMap.put("idNumber", idNumber);
 		modelMap.put("birthdate", birthdate);
