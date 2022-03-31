@@ -11,13 +11,12 @@
 </head>
 
 <body>
-    <h1 class="title">Devolviendo información</h1>
-    <p> Departamento: <span> </span> </p>
+    <h1 class="title">Devolviendo informaci&oacuten</h1>
+    <p> Departamento: <span> ${dept.value}</span> </p>
     <p> Nombre: <span> ${firstName} </span> </p>
     <p> Apellido: <span> ${lastName} </span> </p>
     <p> Carnet: <span> ${idNumber} </span> </p>
-    <p> Cumpleaños: <span> ${birthdate} </span> </p>
-    <p> Cumpleaños: <span> ${age} </span> </p>
+    <p> Cumplea&ntildeos: <span> ${age} </span> </p>
     <p>
 </body>
 

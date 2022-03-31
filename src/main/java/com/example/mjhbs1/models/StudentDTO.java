@@ -7,15 +7,17 @@ import lombok.Data;
 @Data
 public class StudentDTO {
 	
-	@NotNull(message = "firstName")
-	@Size(min = 1, message = "You can't leave this emptyccccc. ")
+	private String dept;
+	
+	@NotNull(message = "You can't leave this empty.")
+	@Size(min = 1, message = "You can't leave this empty. ")
 	private String firstName;
 
-	@NotNull(message = "lastName")
-	@Size(min = 1, message = "You can't leave this empty.xxxxxxxxx ")
+	@NotNull(message = "You can't leave this empty.")
+	@Size(min = 1, message = "You can't leave this empty. ")
 	private String lastName;
 
-	@NotNull(message = "You can't leave this empty.vvvv ")
+	@NotNull(message = "You can't leave this empty.")
 	@Pattern(regexp = "^\\d{8}$", message = "The uca code is invalid.")
 	private String idNumber;
 
@@ -25,7 +27,7 @@ public class StudentDTO {
 	
 	public Student toStudent() {
 		
-		return new Student(firstName,lastName,idNumber, birthdate);
+		return new Student(dept, firstName,lastName,idNumber, birthdate);
 	}
 	 
 	

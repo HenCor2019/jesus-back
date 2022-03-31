@@ -37,6 +37,7 @@ public class TallerController  {
 			return "index.jsp";
 		} else {
 			Student students = register.toStudent();
+			model.put("dept", students.dept);
 			model.put("firstName", students.firstName);
 			model.put("lastName", students.lastName);
 			model.put("idNumber", students.idNumber);

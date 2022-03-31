@@ -19,19 +19,21 @@
 	            
 	                <h1 class="subtitle"> Ingresa tus datos</h1>
 	                <h2 class="title">Departamento</h2>
-	                <select name="Departaments" id="dep">
-	                    <option>La Libertad</option>
-	                    <option>San Salvador</option>
-	                    <option>Santa Ana</option>
-	                    <option>Sonsonate</option>
-	                	<option>Ahuachapan</option>
-	                    <option>San Miguel</option>
-	                    <option>La Union</option>
-	                    <option>Caba&ntildeas</option>
-	                	<option>San Vicente</option>
-	                    <option>Cuscatl&aacuten</option>
-	                    <option>Morazan</option>
-	                    <option>Chalatenango</option>
+	                <select class="dept" name="dept" id= "dept" required>
+	                    <option value="0">La Libertad</option>
+	                    <option value="1">San Salvador</option>
+	                    <option value="2">Santa Ana</option>
+	                    <option value="3">Sonsonate</option>
+	                	<option value="4">Ahuachapan</option>
+	                    <option value="5">San Miguel</option>
+	                    <option value="6">La Union</option>
+	                    <option value="7">Caba&ntildeas</option>
+	                	<option value="8">San Vicente</option>
+	                    <option value="9">Cuscatl&aacuten</option>
+	                    <option value="10">Morazan</option>
+	                    <option value="11">Chalatenango</option>
+	                    <option value="12">Usulut&aacuten</option>
+	                    <option value="13">La Paz</option>
 	                  </select>
 	                  <h2 class="title">Nombre:</h2>
 	                <input type="text" class="name"  name="firstName" required>
